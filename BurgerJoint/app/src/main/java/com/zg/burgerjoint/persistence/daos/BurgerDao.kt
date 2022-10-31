@@ -9,11 +9,17 @@ interface BurgerDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertBurgers(burgers : List<BurgerVO>)
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertBurger(burgerVO: BurgerVO)
+
     @Query("SELECT * FROM burgers")
     fun getAllBurgers() : LiveData<List<BurgerVO>>
 
     @Query("SELECT * FROM burgers WHERE burger_id_pk = :id")
     fun findBurgerById(id : Int) : LiveData<BurgerVO>
+
+    @Query("SELECT * FROM burgers WHERE burger_id_pk = :id")
+    fun findBurgerByIdTest(id : Int) : BurgerVO
 
     @Query("DELETE FROM burgers")
     fun deleteAllBurgers()

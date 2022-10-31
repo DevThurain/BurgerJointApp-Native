@@ -1,6 +1,7 @@
 package com.zg.burgerjoint.instrumentedTests
 
 import android.content.Context
+import android.util.Log
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
@@ -35,9 +36,10 @@ class DatabaseTest {
         val testBurger = BurgerVO()
         testBurger.burgerName = "Chicken Burger"
         testBurger.burgerDescription = "This is chicken burger."
-        testBurger.burgerImageUrl = ""
+        testBurger.burgerImageUrl = "url"
 
-        mBurgerDao.insertBurgers(listOf(testBurger))
-        assert(mBurgerDao.findBurgerById(testBurger.burgerId).value?.burgerId == testBurger.burgerId)
+        mBurgerDao.insertBurger(testBurger)
+        assert(testBurger.burgerId == mBurgerDao.findBurgerById(testBurger.burgerId).value?.burgerId)
+
     }
 }
