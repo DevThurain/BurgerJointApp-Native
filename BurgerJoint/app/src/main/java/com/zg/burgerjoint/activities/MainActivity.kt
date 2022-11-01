@@ -4,6 +4,8 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.transition.Fade
 import android.view.View
@@ -26,6 +28,12 @@ class MainActivity : BaseActivity(), MainView {
 
     private lateinit var mBurgerAdapter: BurgerAdapter
     private lateinit var mPresenter: MainPresenter
+
+    companion object {
+        fun newIntent(context: Context): Intent {
+            return Intent(context, MainActivity::class.java)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

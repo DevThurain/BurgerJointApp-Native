@@ -81,6 +81,7 @@ This style of sandwich often makes use of leftovers from a previous meal. Substi
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/favBurgerDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_medium_2"
