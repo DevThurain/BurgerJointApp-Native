@@ -25,7 +25,7 @@ import org.junit.Rule
 class AddToCartTest {
     private val activityTestRule = ActivityTestRule<MainActivity>(MainActivity::class.java)
 
-//    @get:Rule
+//    @get:Rule `
 //    var mRuntimePermissionRule = GrantPermissionRule.grant(android.Manifest.permission.CAMERA)
 
     @Before

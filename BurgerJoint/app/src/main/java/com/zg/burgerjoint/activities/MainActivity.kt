@@ -59,6 +59,9 @@ class MainActivity : BaseActivity(), MainView {
         ivCart.setOnClickListener {
             mPresenter.onTapCart()
         }
+        btnPlayGame.setOnClickListener {
+            startActivity(GameActivity.newIntent(this))
+        }
     }
 
     private fun setUpPresenter() {

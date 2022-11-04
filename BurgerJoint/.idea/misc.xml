@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/thura/AndroidStudioProjects/BurgerJoint/BurgerJoint/app/src/main/res/layout/activity_burger_details.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/thura/AndroidStudioProjects/BurgerJoint/BurgerJoint/app/src/main/res/layout/activity_game.xml" value="0.1816123188405797" />
         <entry key="..\:/Users/thura/AndroidStudioProjects/BurgerJoint/BurgerJoint/app/src/main/res/layout/activity_login.xml" value="0.1721014492753623" />
+        <entry key="..\:/Users/thura/AndroidStudioProjects/BurgerJoint/BurgerJoint/app/src/main/res/layout/activity_main.xml" value="0.1816123188405797" />
       </map>
     </option>
   </component>
